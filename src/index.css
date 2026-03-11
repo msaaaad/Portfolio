@@ -1,0 +1,110 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy:       #0a1628;
+  --navy-mid:   #112240;
+  --navy-light: #1e3a5f;
+  --gold:       #c9a84c;
+  --gold-light: #e8c97e;
+  --gold-dim:   rgba(201, 168, 76, 0.15);
+  --white:      #f0ebe0;
+  --gray:       #8892a4;
+  --border:     rgba(201, 168, 76, 0.18);
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'DM Sans', sans-serif;
+  --transition:   0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--navy);
+  color: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+a { text-decoration: none; color: inherit; }
+
+img { max-width: 100%; display: block; }
+
+/* Utility */
+.section {
+  padding: 6rem 5vw;
+}
+.section--alt {
+  background: var(--navy-mid);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.7rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+}
+.divider {
+  width: 52px;
+  height: 2px;
+  background: var(--gold);
+  margin-top: 1rem;
+}
+.section-header {
+  margin-bottom: 3.5rem;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-up {
+  animation: fadeUp 0.65s ease forwards;
+}
+.delay-1 { animation-delay: 0.1s; opacity: 0; }
+.delay-2 { animation-delay: 0.25s; opacity: 0; }
+.delay-3 { animation-delay: 0.4s; opacity: 0; }
+.delay-4 { animation-delay: 0.55s; opacity: 0; }
+.delay-5 { animation-delay: 0.7s; opacity: 0; }
+
+/* Tech badge */
+.badge {
+  display: inline-block;
+  padding: 0.22rem 0.65rem;
+  font-size: 0.72rem;
+  border: 1px solid rgba(201,168,76,0.25);
+  background: rgba(201,168,76,0.07);
+  color: var(--gold-light);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 4rem 5vw; }
+}

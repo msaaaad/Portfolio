@@ -1,0 +1,22 @@
+.footer {
+  padding: 1.8rem 5vw;
+  border-top: 1px solid var(--border);
+  background: var(--navy);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.left, .right {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.left span, .right span {
+  color: var(--gold);
+}

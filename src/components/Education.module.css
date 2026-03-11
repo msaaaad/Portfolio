@@ -1,0 +1,107 @@
+.card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 3rem;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  background: var(--navy-mid);
+  max-width: 780px;
+  transition: border-color var(--transition);
+}
+
+.card:hover {
+  border-color: rgba(201,168,76,0.4);
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.yearLine {
+  flex: 1;
+  width: 1px;
+  background: var(--border);
+}
+
+.degree {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.school {
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.location {
+  color: var(--gray);
+}
+
+.desc {
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.project {
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  background: var(--navy);
+  margin-bottom: 1.5rem;
+}
+
+.projectLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.projectTitle {
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.projectDesc {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.cgpa {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .year {
+    flex-direction: row;
+  }
+  .yearLine {
+    flex: 1;
+    height: 1px;
+    width: auto;
+  }
+}

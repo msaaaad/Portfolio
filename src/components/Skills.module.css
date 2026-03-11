@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+.card {
+  padding: 1.8rem;
+  border: 1px solid var(--border);
+  background: var(--navy);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.card:hover {
+  border-color: rgba(201,168,76,0.5);
+  transform: translateY(-3px);
+}
+
+.catTitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag {
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.tag:hover {
+  background: rgba(201,168,76,0.18);
+  border-color: var(--gold);
+  color: var(--white);
+}
