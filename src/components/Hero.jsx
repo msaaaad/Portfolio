@@ -27,6 +27,13 @@ export default function Hero() {
           <div className={`fade-up delay-5 ${styles.btns}`}>
             <a href="#contact" className={styles.btnPrimary}>Get In Touch</a>
             <a href="#experience" className={styles.btnOutline}>View My Work</a>
+            <a
+              href="/Moinul_Islam_Shad_CV_R.pdf"
+              download
+              className={styles.btnOutline}
+            >
+              Download CV ↓
+            </a>
           </div>
         </div>
 
