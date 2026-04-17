@@ -122,5 +122,5 @@ export const CONTACT = [
   { icon: '✉', label: 'Email',    value: 'mshad732@gmail.com',            href: 'mailto:mshad732@gmail.com' },
   { icon: '🐙', label: 'GitHub',   value: 'github.com/msaaaad',            href: 'https://github.com/msaaaad' },
   { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/m-i-saad',      href: 'https://linkedin.com/in/m-i-saad-45b81b171' },
-  { icon: '📞', label: 'Phone',    value: '+880 1521231216',               href: 'tel:+8801521231216' },
+  { icon: '📞', label: 'Phone',    value: '+880 1886893619',               href: 'tel:+8801886893619' },
 ];

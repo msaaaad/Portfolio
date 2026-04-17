@@ -28,7 +28,7 @@ export default function Hero() {
             <a href="#contact" className={styles.btnPrimary}>Get In Touch</a>
             <a href="#experience" className={styles.btnOutline}>View My Work</a>
             <a
-              href="/Moinul_Islam_Shad_CV_R.pdf"
+              href="/Moinul_Islam_Shad_CV_refr.pdf"
               download
               className={styles.btnOutline}
             >
